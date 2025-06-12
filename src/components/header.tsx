@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 // import { CitySearch } from "./city-search";
 import { useTheme } from "@/context/theme-provider";
 import { ThemeToggle } from "./theme-toggle";
-import CityPage from "@/pages/city-page";
 import CitySearch from "./city-search";
 
 export function Header() {
