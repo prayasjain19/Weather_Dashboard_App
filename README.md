@@ -45,7 +45,6 @@ A fully responsive and interactive **Weather Dashboard** built using the **MERN 
 | **React.js** | Frontend framework |
 | **TypeScript** | Static typing |
 | **TailwindCSS** | UI styling |
-| **Node.js** + **Express** |
 | **OpenWeatherMap API** | Weather data provider |
 | **React Query** | Data fetching and caching |
 | **Vite** | Frontend bundler |
@@ -66,7 +65,7 @@ A fully responsive and interactive **Weather Dashboard** built using the **MERN 
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/weather-dashboard.git
+git clone https://github.com/prayasjain19/Weather_Dashboard_App.git
 cd weather-dashboard
 
 # 2. Install dependencies
