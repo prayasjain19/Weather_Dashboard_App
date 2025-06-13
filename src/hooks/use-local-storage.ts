@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+//Local Storage to store the Recent Searches
 export function useLocalStorage<T>(key: string, initialValue: T) {
   const [storedValue, setStoredValue] = useState<T>(() => {
     try {

@@ -2,6 +2,9 @@ import { useQuery } from "@tanstack/react-query";
 import { weatherAPI } from "@/api/weather";
 import type { Coordinates } from "@/api/type";
 
+//Important File
+//Contain all the function to call API anf get the Data
+
 export const WEATHER_KEYS = {
   weather: (coords: Coordinates) => ["weather", coords] as const,
   forecast: (coords: Coordinates) => ["forecast", coords] as const,
