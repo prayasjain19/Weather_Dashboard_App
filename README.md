@@ -34,8 +34,7 @@ A fully responsive and interactive **Weather Dashboard** built using the **MERN 
 
 ## 🚀 Live Demo
 
-[🔗 Click Here to View Live](https://your-deployment-link.vercel.app)  
-*(Replace this with your actual deployment URL)*
+[🔗 Click Here to View Live] https://weather-dashboard-app-omega.vercel.app/ 
 
 ---
 
