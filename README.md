@@ -1,54 +1,77 @@
-# React + TypeScript + Vite
+# 🌤️ Weather Dashboard 🌐
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully responsive and interactive **Weather Dashboard** built using the **MERN stack**. This application allows users to:
+- Get real-time weather updates.
+- View a 5-day forecast.
+- Save recent searches and favorite cities.
+- Switch between light and dark themes.
+- Automatically detect the current location.
 
-Currently, two official plugins are available:
+## 📸 Screenshots
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+### 🏠 Home Page
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![Home Page](public/screenshots/home-page.png)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### 📍 Forecast & City View
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+![City Forecast](public/screenshots/city-forecast.png)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🧩 Features
+
+- 🔍 **Search Weather** by city name.
+- 🗓️ **5-Day Forecast** with min/max temperature, humidity, and wind info.
+- 📌 **Recent Search History** (stored in local storage and MongoDB).
+- ⭐ **Favorite Cities** for quick access.
+- 📍 **Current Location Weather** using Geolocation API.
+- 🌓 **Dark / Light Mode Toggle**.
+- ⚡ **Real-Time API Integration** with OpenWeatherMap.
+
+---
+
+## 🚀 Live Demo
+
+[🔗 Click Here to View Live](https://your-deployment-link.vercel.app)  
+*(Replace this with your actual deployment URL)*
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Description |
+|------------|-------------|
+| **React.js** | Frontend framework |
+| **TypeScript** | Static typing |
+| **TailwindCSS** | UI styling |
+| **Node.js** + **Express** |
+| **OpenWeatherMap API** | Weather data provider |
+| **React Query** | Data fetching and caching |
+| **Vite** | Frontend bundler |
+| **Lucide React** | Icon library |
+
+---
+
+## 📦 Getting Started
+
+### Prerequisites
+
+- Node.js ≥ 18
+- OpenWeatherMap API Key
+
+---
+
+### 🧑‍💻 Local Setup
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/your-username/weather-dashboard.git
+cd weather-dashboard
+
+# 2. Install dependencies
+npm install
+
+# 3. Create environment variables
+touch .env
