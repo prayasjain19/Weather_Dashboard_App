@@ -54,6 +54,7 @@ const WeatherDetails = ({ data }: WeatherDetailsProps) => {
     ];
     return (
         <Card>
+            {/* Displaying the details of the Weather for the current location or Searched City */}
             <CardHeader>
                 <CardTitle>Weather Details</CardTitle>
             </CardHeader>
