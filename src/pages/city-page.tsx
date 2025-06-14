@@ -9,6 +9,7 @@ import { useForecastQuery, useWeatherQuery } from '@/hooks/use-weather';
 import { AlertTriangle } from 'lucide-react';
 import { useParams, useSearchParams } from 'react-router-dom';
 
+//City Page
 const CityPage = () => {
   const [searchParams] = useSearchParams();
   const params = useParams();
@@ -17,9 +18,11 @@ const CityPage = () => {
 
   const coordinates = { lat, lon };
 
+  //Fetching Data using the React Query
   const weatherQuery = useWeatherQuery(coordinates);
   const forecastQuery = useForecastQuery(coordinates);
 
+  //if there is error in fetching
   if (weatherQuery.error || forecastQuery.error) {
     return (
       <Alert variant="destructive">
@@ -36,7 +39,7 @@ const CityPage = () => {
   }
   return (
     <div className='space-y-4'>
-      {/* Facourite List */}
+      {/* Favorite List */}
       <div className="flex items-center justify-between">
         <h1 className="text-3xl font-bold tracking-tight">
           {params.cityName}, {weatherQuery.data.sys.country}
