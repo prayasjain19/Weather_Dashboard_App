@@ -9,7 +9,6 @@ A fully responsive and interactive **Weather Dashboard** built using the **MERN 
 
 ## 📸 Screenshots
 
-
 ### 🏠 Home Page
 
 ![Home Page](public/screenshots/home-page.png)

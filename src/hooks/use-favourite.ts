@@ -2,6 +2,7 @@
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { useLocalStorage } from "./use-local-storage";
 
+//Interface for FavoriteCity
 export interface FavoriteCity {
   id: string;
   name: string;
