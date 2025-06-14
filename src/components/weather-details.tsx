@@ -6,8 +6,9 @@ import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 interface WeatherDetailsProps {
     data: WeatherData;
 }
-
+//Weather Details Page
 const WeatherDetails = ({ data }: WeatherDetailsProps) => {
+    //fetching
     const { wind, main, sys } = data;
 
     // Format time using date-fns
